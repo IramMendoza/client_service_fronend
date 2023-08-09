@@ -20,8 +20,8 @@ const firstPage = () => {
     let handleSubmit = () => {
         axios
         .post("http://127.0.0.1:8000/api/", {
-          role : roleValue,
-          question : qestionValue,
+          "role" : roleValue,
+          "qestion" : qestionValue,
         })
         .then((response) => {
           setResponseValue(response.data.response);
